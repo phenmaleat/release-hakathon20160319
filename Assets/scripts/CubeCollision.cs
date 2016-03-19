@@ -14,9 +14,14 @@ public class CubeCollision : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		Debug.Log ("object" + other.gameObject.tag);
-		Debug.Log ("cube" + gameObject.tag);
-
+		
+		if (gameObject.tag == "cube_center") {
+			if (other.gameObject.tag == "syc_TreeFromTutorial") {
+				print ("cay vao cho mua");
+				other.gameObject.GetComponent<Apple> ().apple.GetComponent<MeshRenderer>().enabled = true;
+			
+			}
+		}
 	}
 
 
