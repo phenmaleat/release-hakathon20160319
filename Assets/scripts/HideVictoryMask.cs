@@ -16,7 +16,7 @@ public class HideVictoryMask : MonoBehaviour {
 	}
 
 	void OnMouseDown (){
-		gameObject.GetComponent<MeshRenderer> ().enabled = false;
+//		gameObject.GetComponent<MeshRenderer> ().enabled = false;
 		catObj.GetComponent<Character> ().reset ();
 	}
 }
